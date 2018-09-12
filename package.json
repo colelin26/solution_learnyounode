@@ -5,7 +5,8 @@
   "main": "1-hello.js",
   "dependencies": {
     "bl": "^2.0.1",
-    "moment": "^2.22.2"
+    "moment": "^2.22.2",
+    "through2-map": "^3.0.0"
   },
   "devDependencies": {},
   "scripts": {
