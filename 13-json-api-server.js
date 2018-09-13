@@ -1,8 +1,6 @@
 let http = require('http');
 let url = require('url');
 
-
-
 let server = http.createServer((req, res) => {
   if (req.method != 'GET') res.end('need a POST request');
 
@@ -19,20 +17,13 @@ let server = http.createServer((req, res) => {
     res.end(JSON.stringify(unixTime));
 
   } else {
-
     let timeObj = {
       hour: time.getHours(),
       minute: time.getMinutes(),
       second: time.getSeconds(),
     }
     res.end(JSON.stringify(timeObj));
-
   }
-
-
-
-
-
 })
 
 server.listen(process.argv[2]);
